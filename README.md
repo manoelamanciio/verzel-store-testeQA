@@ -66,11 +66,11 @@ A configuração usa apenas 2 workers para não sobrecarregar o ambiente compart
 - [x] Análise da documentação e cenários em Gherkin
 - [x] Casos de teste prontos para execução
 - [x] Projeto Playwright com testes de API
-- [ ] Executar os casos manuais e exploratórios e preencher `execucao/casos-de-teste.md`
-- [ ] Rodar `npm run test:api` e conferir cada falha (bug ou interpretação?)
-- [ ] Reportar os bugs em `bugs/` e atualizar o índice
-- [ ] Anexar prints em `evidencias/prints/` e preencher `evidencias/EVIDENCIAS.md`
-- [ ] Completar a automação de UI com os seletores reais
+- [x] Executar os casos manuais e exploratórios e preencher `execucao/casos-de-teste.md`
+- [x] Rodar `npm run test:api` e conferir cada falha (bug ou interpretação?)
+- [x] Reportar os bugs em `bugs/` e atualizar o índice
+- [x] Anexar prints em `evidencias/prints/` e preencher `evidencias/EVIDENCIAS.md`
+- [x] Completar a automação de UI com os seletores reais
 
 ## Uso de IA
 
