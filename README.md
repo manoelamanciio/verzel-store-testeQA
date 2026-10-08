@@ -72,8 +72,39 @@ A configuração usa apenas 2 workers para não sobrecarregar o ambiente compart
 - [x] Anexar prints em `evidencias/prints/` e preencher `evidencias/EVIDENCIAS.md`
 - [x] Completar a automação de UI com os seletores reais
 
+
 ## Uso de IA
 
-> _Rascunho: ajuste para refletir exatamente o que você fez e reaproveite no campo "Onde e como você usou IA" do formulário._
+A Inteligência Artificial foi utilizada como ferramenta de apoio durante a elaboração e execução deste teste técnico, principalmente para aumentar a produtividade e auxiliar na revisão dos artefatos.
 
-Usei o Claude (Anthropic) como apoio para: estruturar a análise da documentação, calcular dados de fronteira, redigir os cenários em Gherkin, montar o esqueleto do repositório e escrever os testes de API em Playwright. A execução dos testes na loja, a conferência dos resultados, a decisão do que é bug e a redação final dos relatos foram feitas por mim. Revisei todo o conteúdo gerado antes de incluí-lo.
+### Como a IA foi utilizada
+
+* Apoio na interpretação e organização dos critérios de aceite da documentação.
+* Auxílio na identificação de possíveis cenários de teste, incluindo cenários positivos, negativos e casos de fronteira.
+* Apoio na estruturação dos cenários em Gherkin.
+* Sugestões para organização dos casos de teste e evidências.
+* Auxílio na revisão da estrutura dos testes automatizados com Playwright.
+* Apoio na identificação de possíveis ambiguidades nas regras de negócio, que posteriormente foram analisadas e validadas com base na documentação e no comportamento da aplicação.
+* Auxílio na revisão textual dos relatos de bugs, mantendo uma estrutura clara com passos para reprodução, resultado esperado, resultado obtido, severidade e evidências.
+* Apoio na análise de erros encontrados durante a automação e na investigação de possíveis causas.
+
+### Papel da IA x responsabilidade do teste
+
+A IA foi utilizada como **assistente**, não como substituta da análise de QA.
+
+A definição dos cenários finais, interpretação das regras, execução dos testes, validação dos resultados, investigação das falhas, classificação dos bugs e coleta das evidências foram realizadas e validadas manualmente.
+
+Quando uma sugestão da IA apresentou uma interpretação diferente da documentação ou do comportamento esperado da aplicação, a decisão final foi tomada com base nos critérios de aceite e nas evidências obtidas durante os testes.
+
+### Exemplo de utilização
+
+Durante a elaboração da automação, a IA foi utilizada para sugerir estruturas de teste e possíveis casos de fronteira. Um exemplo foi a análise do limite para frete grátis:
+
+* R$ 199,90 → não deve conceder frete grátis;
+* R$ 200,00 → deve conceder frete grátis.
+
+A partir dessas sugestões, os cenários foram implementados e posteriormente validados diretamente contra a API e a aplicação.
+
+### Transparência
+
+Todo resultado apresentado neste repositório foi validado contra o ambiente de teste. A utilização de IA teve como objetivo apoiar a análise, documentação e desenvolvimento dos testes, mantendo a responsabilidade técnica e a validação dos resultados sob minha responsabilidade.
